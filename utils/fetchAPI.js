@@ -10,4 +10,5 @@ const {data} = await axios.get(url, {
 		'x-rapidapi-key': '651f129c5dmsh77b3f9006c2b46fp169f6ajsn82622810010b',
 	},
 });
+return data
 }
