@@ -3,10 +3,13 @@ import {Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer} fro
 import {FcMenu,FcHome, FcAbout} from 'react-icons/fc'
 import {BsSearch} from 'react-icons/bs';
 import {FiKey} from 'react-icons/fi';
+import Image from 'next/image';
+import logo from  '../assets/images/TTiD.png'
 const NavBar =() => (
     <>
     <Flex p='2' borderBottom='1px' borderColor='gray.100'>
         <Box fontSize='25px' color='blue.400' fontWeight='bold'>
+            <Image src={logo} alt='logo'/>
             <Link href='/' paddingLeft = '2'> House Finder</Link>
         </Box>
         <Spacer/>
