@@ -24,7 +24,7 @@ const RightArrow = () => {
 const ImageScrollbar = ({data}) =>(
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
         {data.map((item)=> (
-            <Box key ={item.id}width='910px' itemId={item.id} overflow='hidden'> 
+            <Box key ={item.id}width='910px' itemID={item.id} overflow='hidden'> 
              <Image placeholder='blur' 
              blurDataURL={item.url} 
              src={item.url} 
