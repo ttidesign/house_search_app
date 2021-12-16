@@ -28,8 +28,8 @@ const PropertyDetails = ({
 	<Box maxWidth='1000px' margin='auto' p='4'>
 		{photos && <ImageScrollbar data={photos} />}
 		<Box w='full' p='6'>
-			<Flex paddingTop='2' alignItems='center' justifyContent='space-between'>
-				<Flex alignItems='center'>
+			<Flex paddingTop='2' alignItems='center'>
+				
 					<Box paddingRight='3' color='green.400'>
 						{isVerified && <GoVerified />}
 					</Box>
@@ -37,13 +37,12 @@ const PropertyDetails = ({
 						AED {price}
 						{rentFrequency && `/${rentFrequency}`}
 					</Text>
-				</Flex>
-				<Box>
+                    <Spacer />
 					<Avatar
 						size='sm'
 						className='agency-logo'
 						src={agency?.logo?.url}></Avatar>
-				</Box>
+				
 			</Flex>
 			<Flex
 				alignItems='center'
